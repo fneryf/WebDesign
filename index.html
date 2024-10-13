@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Site</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+       
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 80%; 
+                max-width: 1200px; 
+                margin: 50px auto; 
+                padding: 20px;
+                background-color: #F7EBEC;
+                border: 2px solid #4C2C69;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 2px solid #F7EBEC;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+
+            .logo {
+                width: 150px;
+                height: 50px;
+                background-color: #4C2C69;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: medium;
+            }
+
+            .menu {
+                display: flex;
+                gap: 15px;
+            }
+
+            .menu a {
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: #FF785A;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: #F7EBEC;
+                font-weight: bold;
+                border: 2px solid #4C2C69;
+            }
+
+            section {
+                margin-bottom: 20px;
+                background-color: #FF785A;
+                border: 2px solid #F7EBEC;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+            }
+
+            .section-1 {
+                height: 100px;
+            }
+
+            .section-2 {
+                height: 150px;
+            }
+
+            .section-3 {
+                height: 200px;
+            }
+
+            .content-block {
+                background-color: #FFF05A;
+                border: 2px solid #F7EBEC;
+                flex-grow: 1;
+                margin: 0 10px;
+            }
+
+            .block-1 {
+                flex-basis: 30%;
+            }
+
+            .block-2 {
+                flex-basis: 50%;
+            }
+
+            .block-3 {
+                flex-basis: 20%;
+            }
+
+            @media (max-width: 1024px) {
+                .container {
+                    width: 90%;
+                }
+
+                .menu a {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                section {
+                    padding: 5px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .navbar {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .logo {
+                    margin-bottom: 15px; /* Espaço entre o logo e o menu */
+                }
+
+                .menu {
+                    justify-content: center;
+                    margin-top: 10px; /* Espaçamento extra entre menu e logo */
+                }
+
+                section {
+                    flex-direction: column;
+                }
+
+                .content-block {
+                    flex-basis: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .logo {
+                    width: 120px;
+                    height: 40px;
+                    margin-bottom: 15px;
+                }
+
+                .menu {
+                    margin-top: 10px;
+                }
+
+                .menu a {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                section {
+                    margin-bottom: 15px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">Você está usando um navegador <strong>antigo</strong>. Por favor, <a href="#">atualize seu navegador</a> para melhorar sua experiência.</p>
+        <![endif]-->
+
+        <!-- Contêiner Centralizado -->
+        <div class="container">
+            <!-- Barra de navegação -->
+            <nav class="navbar">
+                <!-- Espaço para o logotipo à esquerda -->
+                <div class="logo">Logo</div>
+
+                <!-- Menu com 4 itens à direita -->
+                <div class="menu">
+                    <a href="#"> 1</a>
+                    <a href="#"> 2</a>
+                    <a href="#"> 3</a>
+                    <a href="#"> 4</a>
+                </div>
+            </nav>
+
+            <!-- Primeira seção com 3 blocos paralelos -->
+            <section class="section-1">
+                <div class="content-block block-1"></div>
+                <div class="content-block block-2"></div>
+                <div class="content-block block-3"></div>
+            </section>
+
+            <!-- Segunda seção com 3 blocos paralelos -->
+            <section class="section-2">
+                <div class="content-block block-1"></div>
+                <div class="content-block block-2"></div>
+                <div class="content-block block-3"></div>
+            </section>
+
+            <!-- Terceira seção com 3 blocos paralelos -->
+            <section class="section-3">
+                <div class="content-block block-1"></div>
+                <div class="content-block block-2"></div>
+                <div class="content-block block-3"></div>
+            </section>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
+
